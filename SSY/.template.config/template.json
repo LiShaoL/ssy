@@ -1,0 +1,13 @@
+{
+    "author": "lsl", //必须
+    "classifications": [ "Web/ASP.NET" ], //必须，这个对应模板的Tags
+    "name": "SSY", //必须，这个对应模板的Templates
+    "identity": "SSY", //可选，模板的唯一名称
+    "shortName": "SSY", //必须，这个对应模板的Short Name
+    "tags": {
+      "language": "C#" ,
+      "type":"project"
+    },
+    "sourceName": "SSY",  // 可选，要替换的名字
+    "preferNameDirectory": true  // 可选，添加目录  
+}

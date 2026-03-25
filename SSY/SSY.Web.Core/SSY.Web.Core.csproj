@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net8.0</TargetFrameworks>
+		<NoWarn>1701;1702;8616;1591;8618;8619;8629;8602;8603;8604;8625;8765</NoWarn>
+		<DocumentationFile>SSY.Web.Core.xml</DocumentationFile>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="SSY.Web.Core.xml" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="Web.Development.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="Web.Production.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\SSY.System\SSY.System.csproj" />
+	</ItemGroup>
+
+</Project>

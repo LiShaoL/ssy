@@ -1,0 +1,457 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SSY.System</name>
+    </assembly>
+    <members>
+        <member name="P:SSY.System.GetLogVisitListReq.OpUser">
+            <summary>
+            登录人名称
+            </summary>
+        </member>
+        <member name="P:SSY.System.GetLogVisitListReq.OpAccount">
+             <summary>
+             操作人账号 
+            </summary>
+        </member>
+        <member name="P:SSY.System.GetLogVisitListReq.StartTime">
+             <summary>
+             开始时间 
+            </summary>
+        </member>
+        <member name="P:SSY.System.GetLogVisitListReq.EndTime">
+             <summary>
+             结束时间 
+            </summary>
+        </member>
+        <member name="T:SSY.System.LogService">
+            <summary>
+            日志管理
+            </summary>
+        </member>
+        <member name="M:SSY.System.LogService.DelLogOperateList">
+            <summary>
+            清空操作日志列表
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:SSY.System.LogService.DelLogVisitList">
+            <summary>
+            清空登录日志列表
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:SSY.System.LogService.GetLogOperateList(SSY.System.GetLogVisitListReq)">
+            <summary>
+            获取操作日志列表
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:SSY.System.LogService.GetLogVisitList(SSY.System.GetLogVisitListReq)">
+            <summary>
+            获取登录日志列表
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="T:SSY.System.AddMenuReq">
+            <summary>
+            添加菜单参数
+            </summary>
+        </member>
+        <member name="P:SSY.System.AddMenuReq.ParentId">
+            <summary>
+            上级菜单Id
+            </summary>
+        </member>
+        <member name="P:SSY.System.AddMenuReq.MenuType">
+             <summary>
+             菜单类型 1目录 2菜单 3按钮
+            </summary>
+        </member>
+        <member name="P:SSY.System.AddMenuReq.Path">
+             <summary>
+             路由地址 
+            </summary>
+        </member>
+        <member name="P:SSY.System.AddMenuReq.Component">
+             <summary>
+             组件路径 
+            </summary>
+        </member>
+        <member name="P:SSY.System.AddMenuReq.Authority">
+             <summary>
+             权限标识 
+            </summary>
+        </member>
+        <member name="P:SSY.System.AddMenuReq.Title">
+             <summary>
+             菜单名称 
+            </summary>
+        </member>
+        <member name="P:SSY.System.AddMenuReq.Icon">
+             <summary>
+             图标 
+            </summary>
+        </member>
+        <member name="P:SSY.System.AddMenuReq.OrderNo">
+             <summary>
+             排序 
+            </summary>
+        </member>
+        <member name="P:SSY.System.AddMenuReq.IsHide">
+             <summary>
+             是否隐藏 
+            </summary>
+        </member>
+        <member name="T:SSY.System.UpdateMenuReq">
+            <summary>
+            修改菜单参数
+            </summary>
+        </member>
+        <member name="T:SSY.System.MenuIdReq">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:SSY.System.MenuIdReq.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:SSY.System.GetMenuListReq.Path">
+             <summary>
+             路由地址 
+            </summary>
+        </member>
+        <member name="P:SSY.System.GetMenuListReq.Title">
+             <summary>
+             菜单名称 
+            </summary>
+        </member>
+        <member name="T:SSY.System.MenuService">
+            <summary>
+            菜单管理
+            </summary>
+        </member>
+        <member name="M:SSY.System.MenuService.AddMenu(SSY.System.AddMenuReq)">
+            <summary>
+            添加菜单
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:SSY.System.MenuService.DelMenu(SSY.System.MenuIdReq)">
+            <summary>
+            删除菜单
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:SSY.System.MenuService.GetMenuList(SSY.System.GetMenuListReq)">
+            <summary>
+            获取菜单列表
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:SSY.System.MenuService.UpdateMenu(SSY.System.UpdateMenuReq)">
+            <summary>
+            修改菜单
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="P:SSY.System.AddRoleReq.Remark">
+             <summary>
+             备注 
+            </summary>
+        </member>
+        <member name="P:SSY.System.AddRoleReq.Status">
+             <summary>
+             状态 
+            </summary>
+        </member>
+        <member name="P:SSY.System.GetRoleListReq.Name">
+             <summary>
+             名称 
+            </summary>
+        </member>
+        <member name="P:SSY.System.GetRoleMenuListRes.Id">
+             <summary>
+             主键Id 
+            </summary>
+        </member>
+        <member name="P:SSY.System.GetRoleMenuListRes.ParentId">
+             <summary>
+             父Id 
+            </summary>
+        </member>
+        <member name="P:SSY.System.GetRoleMenuListRes.MenuType">
+             <summary>
+             菜单类型 
+            </summary>
+        </member>
+        <member name="P:SSY.System.GetRoleMenuListRes.Name">
+             <summary>
+             路由名称 
+            </summary>
+        </member>
+        <member name="P:SSY.System.GetRoleMenuListRes.Path">
+             <summary>
+             路由地址 
+            </summary>
+        </member>
+        <member name="P:SSY.System.GetRoleMenuListRes.Component">
+             <summary>
+             组件路径 
+            </summary>
+        </member>
+        <member name="P:SSY.System.GetRoleMenuListRes.Authority">
+             <summary>
+             权限标识 
+            </summary>
+        </member>
+        <member name="P:SSY.System.GetRoleMenuListRes.Title">
+             <summary>
+             菜单名称 
+            </summary>
+        </member>
+        <member name="P:SSY.System.GetRoleMenuListRes.Icon">
+             <summary>
+             图标 
+            </summary>
+        </member>
+        <member name="P:SSY.System.GetRoleMenuListRes.OrderNo">
+             <summary>
+             排序 
+            </summary>
+        </member>
+        <member name="P:SSY.System.GetRoleMenuListRes.IsHide">
+             <summary>
+             是否隐藏 
+            </summary>
+        </member>
+        <member name="P:SSY.System.GetRoleMenuListRes.Checked">
+             <summary>
+             是否隐藏 
+            </summary>
+        </member>
+        <member name="M:SSY.System.RoleService.AddRole(SSY.System.AddRoleReq)">
+            <summary>
+            添加角色
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:SSY.System.RoleService.AssignPermissions(SSY.System.AssignPermissionsReq)">
+            <summary>
+            分配权限
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:SSY.System.RoleService.DelRole(SSY.System.RoleId)">
+            <summary>
+            删除角色
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:SSY.System.RoleService.GetRoleList(SSY.System.GetRoleListReq)">
+            <summary>
+            获取角色列表
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:SSY.System.RoleService.GetRoleMenuList(SSY.System.RoleId)">
+            <summary>
+            获取角色菜单列表
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:SSY.System.RoleService.UpdateRole(SSY.System.UpdateRoleReq)">
+            <summary>
+            修改角色
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="T:SSY.System.PcLoginReq">
+            <summary>
+            登录参数
+            </summary>
+        </member>
+        <member name="P:SSY.System.PcLoginReq.Account">
+            <summary>
+            账号
+            </summary>
+        </member>
+        <member name="P:SSY.System.PcLoginReq.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:SSY.System.AddUserReq.Account">
+             <summary>
+             账号 
+            </summary>
+        </member>
+        <member name="P:SSY.System.AddUserReq.Password">
+             <summary>
+             密码 
+            </summary>
+        </member>
+        <member name="P:SSY.System.AddUserReq.Name">
+             <summary>
+             姓名 
+            </summary>
+        </member>
+        <member name="P:SSY.System.AddUserReq.RoleId">
+             <summary>
+             权限Id 
+            </summary>
+        </member>
+        <member name="P:SSY.System.GetUserListReq.Account">
+             <summary>
+             账号 
+            </summary>
+        </member>
+        <member name="P:SSY.System.GetUserListReq.Name">
+             <summary>
+             姓名 
+            </summary>
+        </member>
+        <member name="T:SSY.System.PcLoginRes">
+            <summary>
+            登录返回参数
+            </summary>
+        </member>
+        <member name="P:SSY.System.PcLoginRes.AccessToken">
+            <summary>
+            登录令牌
+            </summary>
+        </member>
+        <member name="P:SSY.System.PcLoginRes.RefreshToken">
+            <summary>
+            刷新令牌
+            </summary>
+        </member>
+        <member name="P:SSY.System.GetUserInfoRes.Id">
+             <summary>
+             用户Id 
+            </summary>
+        </member>
+        <member name="P:SSY.System.GetUserInfoRes.Name">
+             <summary>
+             姓名 
+            </summary>
+        </member>
+        <member name="P:SSY.System.GetUserInfoRes.Account">
+            <summary>
+            账号
+            </summary>
+        </member>
+        <member name="P:SSY.System.GetUserInfoRes.RoleId">
+             <summary>
+             权限Id 
+            </summary>
+        </member>
+        <member name="P:SSY.System.PicValidCodeRes.ValidCodeBase64">
+            <summary>
+            验证码图片，Base64
+            </summary>
+        </member>
+        <member name="P:SSY.System.PicValidCodeRes.ValidCodeReqNo">
+            <summary>
+            验证码请求号
+            </summary>
+        </member>
+        <member name="T:SSY.System.IUserService">
+            <summary>
+            用户管理
+            </summary>
+        </member>
+        <member name="T:SSY.System.UserService">
+            <summary>
+            用户管理
+            </summary>
+        </member>
+        <member name="M:SSY.System.UserService.AddUser(SSY.System.AddUserReq)">
+            <summary>
+            添加用户
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:SSY.System.UserService.DelUser(SSY.System.UserIdReq)">
+            <summary>
+            删除用户
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:SSY.System.UserService.GetCaptcha">
+            <summary>
+            获取验证码
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:SSY.System.UserService.GetRoles">
+            <summary>
+            获取角色
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:SSY.System.UserService.GetUserInfo">
+            <summary>
+            获取用户信息
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:SSY.System.UserService.GetUserList(SSY.System.GetUserListReq)">
+            <summary>
+            获取用户列表
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:SSY.System.UserService.PcLogin(SSY.System.PcLoginReq)">
+            <summary>
+            PC登录
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:SSY.System.UserService.UpdateUser(SSY.System.UpdateUserReq)">
+            <summary>
+            修改用户
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+    </members>
+</doc>

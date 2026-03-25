@@ -1,0 +1,64 @@
+{
+  //日志配置
+  "Logging": {
+    "Monitor": {
+      "GlobalEnabled": true,
+      "Console": false, //是否显示控制台Monitor日志
+      "File": false //是否记录文件Monitor日志
+    },
+    "File": {
+      "FileName": "logs/{0:yyyy-MM-dd}/{1}.log", // 日志文件
+      "Append": true, // 追加覆盖
+      "MinimumLevel": "Information", // 日志级别
+      "FileSizeLimitBytes": 104857600, // 100M=10*10*1024*1024
+      "MaxRollingFiles": 10 // 只保留10个文件
+    },
+    "MessageFormat": true, //是否格式化日志
+    "LogLevel": {
+      "Default": "Information", //默认日志级别
+      "Max": "Error", //最大日志级别
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information",
+      "Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware": "Information"
+    }
+  },
+  //缓存配置
+  "Cache": {
+    "Prefix": "ssy_", // 全局缓存前缀
+    "CacheType": "Memory", // Memory、Redis
+    "Redis": {
+      "Configuration": "server=127.0.0.1:6379;password=;db=1;", // Redis连接字符串
+      "MaxMessageSize": "1048576", // 最大消息大小 默认1024 * 1024
+      "AutoDetect": false // 自动检测集群节点 阿里云的Redis分布式集群使用代理模式，需要设置为false关闭自动检测；如果不用代理地址，就配置多个节点地址并打开自动检测
+    }
+  },
+  //数据库配置
+  "SqlSugarSettings": {
+    //Sqlsugar连接字符串配置
+    "ConnectionStrings": [
+      {
+        "ConfigId": "SSY", //租户ID
+        "ConnectionString": "server=127.0.0.1;Database=ssy;Uid=ssy;Pwd=LfLCeYJJyfZ53hKp;CharSet=utf8mb4;", //连接字符串
+        "DbType": "MySql", //数据库类型
+        "IsAutoCloseConnection": true, //是否自动释放
+        "IsUnderLine": false //是否驼峰转下划线
+      }
+    ]
+  },
+  //阿里云OSS
+  "AliyunOSS": {
+    "AccessKeyId": "",
+    "AccessKeySecret": "",
+    "Endpoint": "oss-cn-beijing.aliyuncs.com",
+    "BucketName": "test"
+  },
+  "AliyunSms": {
+    "SignName": "",
+    "AccessKeyId": "",
+    "AccessKeySecret": "",
+    "Endpoint": "dysmsapi.aliyuncs.com",
+    "Templates": {
+      "LoginCode": ""
+    }
+  }
+}

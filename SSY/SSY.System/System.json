@@ -1,0 +1,8 @@
+{
+  //swagger分组设置
+  "[openapi:System]": {
+    "Order": 100, //分组排序，int 类型，数字越大排前面，默认 0
+    "Title": "后端系统" //配置分组标题，string 类型
+  },
+  "PassSalt": "Ssy@2024"
+}

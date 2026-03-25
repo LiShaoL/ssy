@@ -1,0 +1,9 @@
+﻿global using Furion;
+global using Masuit.Tools;
+global using Microsoft.AspNetCore.Builder;
+global using Microsoft.AspNetCore.Hosting;
+global using Microsoft.Extensions.DependencyInjection;
+global using NewLife.Caching;
+global using NewLife.Serialization;
+global using SSY.Core;
+global using SimpleRedis;

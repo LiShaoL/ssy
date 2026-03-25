@@ -1,0 +1,9 @@
+﻿global using SSY.Core;
+global using SSY.Entity.System;
+global using System.ComponentModel.DataAnnotations;
+global using Furion;
+global using Furion.DataEncryption;
+global using Furion.FriendlyException;
+global using Furion.DependencyInjection;
+global using Mapster;
+global using SSY.Core.Utils;
